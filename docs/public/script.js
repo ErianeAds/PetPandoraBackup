@@ -1,6 +1,19 @@
 // Constantes
 const API_BASE_URL = 'http://localhost:3000/api';
 
+document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+  
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+  });
+  
+
+
 // ==============================================
 // FUNÇÕES UTILITÁRIAS
 // ==============================================
